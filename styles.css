@@ -126,16 +126,33 @@ body {
   background-color: white;
 }
 
-
+/* Walls */
 .wall {
   bottom: 0;
-  border-radius: 10px;
-  background-color: #797A83;
+  border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.20);
+  background-color: #B3C7E1;
+  background-image: url(./topography.svg);
+}
+
+.land {
+  width: 100%;
+  height: 20px;
+  background-color: #667685;
+}
+
+.zigzag {
+  width: 100%;
+  height: 30px;
+  background: linear-gradient(135deg, #667685 25%, transparent 25%) -50px 0,
+  linear-gradient(-135deg, #667685 25%, transparent 25%) -50px 0,
+  linear-gradient(45deg, #B3C7E1 25%, transparent 25%),
+  linear-gradient(-45deg, transparent 25%, #16202E 25%);
+  background-size: 80px 30px;
 }
 
 
-/* More specific */
+/* More specific the layers */
 .layer__1, .layer__2 {
   z-index: 1;
   height: 400px;
