@@ -264,6 +264,13 @@ body {
 
 input:checked {
   counter-increment: score;
+  opacity: 0;
+  visibility: hidden;
+}
+
+input:checked  + label {
+  opacity: 0;
+  visibility: hidden;
 }
 
 .score::after {
